@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:map/Utility/Constance.dart';
 
@@ -64,7 +66,7 @@ class Result extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            Container(
+            SizedBox(
               height: 35,
               width: 300,
               child: ElevatedButton(
@@ -77,7 +79,7 @@ class Result extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Container(
+            SizedBox(
               height: 35,
               width: 300,
               child: ElevatedButton(

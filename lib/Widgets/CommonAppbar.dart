@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:map/Utility/Constance.dart';
 
@@ -21,16 +23,16 @@ class CommonAppbar extends StatelessWidget {
       elevation: elevation,
       backgroundColor: backgroundColor,
       leading: isbackarrow
-          ? BackButton(
+          ? const BackButton(
               color: black,
             )
-          : SizedBox.shrink(),
+          : const SizedBox.shrink(),
       centerTitle: centerTitle,
       title: Text(
         title,
-        style: TextStyle(color: black),
+        style: const TextStyle(color: black),
       ),
-      actions: [],
+      actions: const [],
     );
   }
 }

@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, file_names
+
 import 'package:flutter/material.dart';
 import 'package:map/Utility/Constance.dart';
 
@@ -49,7 +51,7 @@ class _questionscreenState extends State<questionscreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               height: 50,
               width: 1000,
               child: OutlinedButton(
@@ -59,14 +61,14 @@ class _questionscreenState extends State<questionscreen> {
                 onPressed: () {},
                 child: const Text(
                   'A:  Gujarat',
-                  style: TextStyle(fontSize: 30, color: Colors.black),
+                  style: TextStyle(fontSize: 20, color: Colors.black),
                 ),
               ),
             ),
             const SizedBox(
               height: 15,
             ),
-            Container(
+            SizedBox(
               height: 50,
               width: 1000,
               child: OutlinedButton(
@@ -76,14 +78,14 @@ class _questionscreenState extends State<questionscreen> {
                 onPressed: () {},
                 child: const Text(
                   'B:  Maharashtra',
-                  style: TextStyle(fontSize: 30, color: Colors.black),
+                  style: TextStyle(fontSize: 20, color: Colors.black),
                 ),
               ),
             ),
             const SizedBox(
               height: 15,
             ),
-            Container(
+            SizedBox(
               height: 50,
               width: 1000,
               child: OutlinedButton(
@@ -93,14 +95,14 @@ class _questionscreenState extends State<questionscreen> {
                 onPressed: () {},
                 child: const Text(
                   'C:  Rajasthan',
-                  style: TextStyle(fontSize: 30, color: Colors.black),
+                  style: TextStyle(fontSize: 20, color: Colors.black),
                 ),
               ),
             ),
             const SizedBox(
               height: 15,
             ),
-            Container(
+            SizedBox(
               height: 50,
               width: 1000,
               child: OutlinedButton(
@@ -110,7 +112,7 @@ class _questionscreenState extends State<questionscreen> {
                 onPressed: () {},
                 child: const Text(
                   'D: Punjab',
-                  style: TextStyle(fontSize: 30, color: Colors.black),
+                  style: TextStyle(fontSize: 20, color: Colors.black),
                 ),
               ),
             ),

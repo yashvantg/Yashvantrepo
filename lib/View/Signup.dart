@@ -1,4 +1,6 @@
 //import 'dart:ffi';
+// ignore_for_file: file_names, non_constant_identifier_names, avoid_types_as_parameter_names
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:map/Controller/Image_controller.dart';
@@ -56,14 +58,14 @@ class _SignupscreenState extends State<Signupscreen> {
         child: SingleChildScrollView(
           child: Form(
             key: Key,
-            child: Container(
+            child: SizedBox(
               width: 500,
               child: Column(
                 children: [
                   const SizedBox(
                     height: 10,
                   ),
-                  Container(
+                  SizedBox(
                       width: 150,
                       height: 150,
                       child: GestureDetector(
@@ -103,13 +105,13 @@ class _SignupscreenState extends State<Signupscreen> {
                     errormessage: 'Enter Valid Text',
                     formatter: [textInputFormatter],
                   ),
-                  CommonTextFormField(
+                  const CommonTextFormField(
                     isEmailvalid: true,
                     hint: 'Enter Email',
                     label: 'Email ID',
                     textInputType: TextInputType.emailAddress,
                     errormessage: 'Enter Valid Email ID',
-                    formatter: const [],
+                    formatter: [],
                   ),
                   CommonTextFormField(
                     abc: mobilecontroller,
@@ -125,7 +127,7 @@ class _SignupscreenState extends State<Signupscreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
+                      SizedBox(
                         height: 70,
                         width: 190,
                         child: Obx(
@@ -170,7 +172,7 @@ class _SignupscreenState extends State<Signupscreen> {
                       //       textInputType: TextInputType.number,
                       //       formatter: []),
                       // ),
-                      Container(
+                      SizedBox(
                         height: 60,
                         width: 200,
                         child: Expanded(
@@ -203,7 +205,7 @@ class _SignupscreenState extends State<Signupscreen> {
                       ),
                     ],
                   ),
-                  Container(
+                  SizedBox(
                     height: 70,
                     width: 400,
                     child: CommonDropDown(

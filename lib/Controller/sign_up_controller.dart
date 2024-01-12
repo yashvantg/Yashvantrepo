@@ -7,6 +7,7 @@ class SignUpController extends GetxController {
 
   final RxString selectdesignation = ''.obs;
 
+  // ignore: non_constant_identifier_names
   void chnageBirthDate(String Date) {
     selectedBirthDate.value = Date;
   }

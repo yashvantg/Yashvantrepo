@@ -23,7 +23,7 @@ const String english = 'assets/images/english.png';
 const String hindi = 'assets/images/hindi.jpeg';
 const String computer = 'assets/images/computer.jpeg';
 const String addPic = 'assets/images/add_pic.png';
-const String quizBook = 'assets/quiz_book.png';
+const String quizBook = 'assets/images/quiz_book.png';
 
 const Color white = Colors.white;
 const Color black = Colors.black;

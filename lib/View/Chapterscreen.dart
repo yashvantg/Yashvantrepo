@@ -1,7 +1,9 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, file_names
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:map/Utility/Constance.dart';
+import 'package:map/View/QuestionScreen.dart';
 import 'package:map/Widgets/CommonAppbar.dart';
 
 class Chapterscreen extends StatefulWidget {
@@ -141,46 +143,51 @@ class Customitem extends StatelessWidget {
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Card(
-          child: ListTile(
-              leading: CircleAvatar(
-                radius: 50,
-                backgroundImage: const AssetImage(limage),
-                child: Text(
-                  Logoindex,
-                  style: const TextStyle(color: white),
+        child: InkWell(
+          onTap: () {
+            Get.to(() => questionscreen());
+          },
+          child: Card(
+            child: ListTile(
+                leading: CircleAvatar(
+                  radius: 50,
+                  backgroundImage: const AssetImage(limage),
+                  child: Text(
+                    Logoindex,
+                    style: const TextStyle(color: white),
+                  ),
                 ),
-              ),
-              title: Text(Ch_name),
-              subtitle: Column(children: [
-                Row(
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: AssetImage(Teacherlogo),
-                    ),
-                    const SizedBox(
-                      width: 5,
-                    ),
-                    Text(Teachername),
-                  ],
-                ),
-                const Divider(
-                  thickness: 1,
-                ),
-                Row(
-                  children: [
-                    SizedBox(
-                        height: 30, width: 30, child: Image.asset(Que_image)),
-                    Text('Question: $Question_no'),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    SizedBox(
-                        height: 30, width: 30, child: Image.asset(time_icon)),
-                    Text('Minute: $Minute')
-                  ],
-                )
-              ])),
+                title: Text(Ch_name),
+                subtitle: Column(children: [
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundImage: AssetImage(Teacherlogo),
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      Text(Teachername),
+                    ],
+                  ),
+                  const Divider(
+                    thickness: 1,
+                  ),
+                  Row(
+                    children: [
+                      SizedBox(
+                          height: 30, width: 30, child: Image.asset(Que_image)),
+                      Text('Question: $Question_no'),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      SizedBox(
+                          height: 30, width: 30, child: Image.asset(time_icon)),
+                      Text('Minute: $Minute')
+                    ],
+                  )
+                ])),
+          ),
         ),
       ),
     );

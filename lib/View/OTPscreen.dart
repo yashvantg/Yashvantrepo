@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:map/Utility/Constance.dart';
@@ -20,7 +22,7 @@ class OTPscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     mobilecontroller.text = mobile;
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
           preferredSize: Size.fromHeight(50),
           child: CommonAppbar(
             title: 'OTP Varification',
@@ -33,14 +35,14 @@ class OTPscreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Please Enter Your 4-digit OTP sent to Your Phone',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Container(
+            SizedBox(
               width: 300,
               child: Form(
                 key: keys,
@@ -56,7 +58,7 @@ class OTPscreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Commonbutton(

@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names, file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:map/Utility/Constance.dart';
@@ -21,7 +23,7 @@ class CommonTextFormField extends StatelessWidget {
   final TextEditingController? abc;
   final bool isread;
 
-  CommonTextFormField({
+  const CommonTextFormField({
     super.key,
     this.hint = '',
     required this.label,
